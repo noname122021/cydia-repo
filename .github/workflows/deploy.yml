@@ -27,7 +27,9 @@ jobs:
       - name: Prepare site directory
         run: |
           mkdir -p _site/debs
-          cp Packages Packages.bz2 Release CydiaIcon.png index.html README.md _site/
+          cp -r Packages Packages.bz2 Release CydiaIcon.png index.html README.md _site/
+          cp -f robots.txt sitemap.xml _site/ 2>/dev/null || true
+          cp -f google*.html _site/ 2>/dev/null || true
 
       - name: Fetch deb packages from GitHub Releases
         run: |

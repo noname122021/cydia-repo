@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://noname122021.github.io/cydia-repo/sitemap.xml
