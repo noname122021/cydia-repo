@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>noname122021 Cydia Repository</title>
+    <style type="text/css">
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: #d8dbe0;
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQIW2NkQAOMQMB4//79fyAGioAIYBIgAiAGyAIAmHkY2V5R7gEAAAAASUVORK5CYII=");
+            background-repeat: repeat;
+            padding: 16px 12px 30px;
+            color: #333333;
+            -webkit-text-size-adjust: none;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #b5b5b5;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            -webkit-box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+            box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #3a4b60;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#728299), to(#2f3d4f));
+            background-image: -webkit-linear-gradient(top, #728299 0%, #4b5d73 50%, #3a4b60 51%, #2f3d4f 100%);
+            background-image: linear-gradient(to bottom, #728299 0%, #4b5d73 50%, #3a4b60 51%, #2f3d4f 100%);
+            padding: 20px 16px;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 0 -1px 1px rgba(0,0,0,0.8);
+            border-bottom: 1px solid #1e2834;
+        }
+        .header img {
+            width: 72px;
+            height: 72px;
+            -webkit-border-radius: 15px;
+            border-radius: 15px;
+            -webkit-box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        .header h1 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 0;
+            text-shadow: 0 -1px 1px rgba(0,0,0,0.8);
+        }
+        .header p {
+            margin-top: 4px;
+            font-size: 13px;
+            color: #d0d7e2;
+            text-shadow: 0 -1px 1px rgba(0,0,0,0.6);
+        }
+        .content {
+            padding: 16px;
+        }
+        .btn-cydia {
+            display: block;
+            width: 100%;
+            background-color: #175791;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#4ba3e3), to(#124373));
+            background-image: -webkit-linear-gradient(top, #4ba3e3 0%, #1f6cb0 50%, #175791 51%, #124373 100%);
+            background-image: linear-gradient(to bottom, #4ba3e3 0%, #1f6cb0 50%, #175791 51%, #124373 100%);
+            border: 1px solid #0e355c;
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+            color: #ffffff !important;
+            text-align: center;
+            padding: 13px 10px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            text-shadow: 0 -1px 1px rgba(0,0,0,0.6);
+            -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.4);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.4);
+            margin-bottom: 12px;
+            cursor: pointer;
+        }
+        .btn-cydia:active {
+            background-color: #124373;
+            background-image: none;
+        }
+        .repo-url-box {
+            background-color: #f2f4f7;
+            border: 1px solid #d0d4dc;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            padding: 9px 10px;
+            font-size: 12px;
+            color: #444444;
+            text-align: center;
+            word-break: break-all;
+            margin-bottom: 18px;
+            font-family: Courier, monospace;
+        }
+        .section-header {
+            margin: 16px 2px 8px;
+            overflow: hidden;
+            clear: both;
+        }
+        .section-title {
+            float: left;
+            font-size: 13px;
+            font-weight: bold;
+            color: #4c566c;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+            line-height: 20px;
+        }
+        .section-badge {
+            float: right;
+            background-color: #cbd3df;
+            color: #3b4556;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 2px 8px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            line-height: 16px;
+        }
+        .card {
+            background-color: #fdfdfd;
+            border: 1px solid #c8ccd4;
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            clear: both;
+        }
+        .card-header {
+            padding: 12px 14px;
+            cursor: pointer;
+            background-color: #ffffff;
+            overflow: hidden;
+            clear: both;
+        }
+        .card-header:active {
+            background-color: #f0f2f5;
+        }
+        .card-icon {
+            float: left;
+            width: 44px;
+            height: 44px;
+            -webkit-border-radius: 9px;
+            border-radius: 9px;
+            -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+            margin-right: 12px;
+        }
+        .card-meta {
+            float: left;
+            width: 72%;
+        }
+        .card-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #1a1a1a;
+            line-height: 20px;
+        }
+        .version-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: normal;
+            background-color: #e4e7eb;
+            color: #555555;
+            padding: 1px 5px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+        .card-subtitle {
+            font-size: 13px;
+            color: #666666;
+            margin-top: 3px;
+            line-height: 16px;
+        }
+        .card-arrow {
+            float: right;
+            font-size: 13px;
+            color: #888888;
+            line-height: 44px;
+            width: 16px;
+            text-align: right;
+        }
+        .card-body {
+            display: none;
+            padding: 0 14px 14px;
+            border-top: 1px solid #eceff2;
+            background-color: #fafbfc;
+            clear: both;
+        }
+        .card-desc {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #444444;
+            padding: 12px 0 10px;
+        }
+        .sub-group-title {
+            font-size: 11px;
+            font-weight: bold;
+            color: #728299;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 10px 0 5px;
+            clear: both;
+        }
+        .list-group {
+            background-color: #ffffff;
+            border: 1px solid #dcdfe4;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            clear: both;
+        }
+        .list-item {
+            padding: 9px 12px;
+            border-bottom: 1px solid #edf0f3;
+            overflow: hidden;
+            clear: both;
+            font-size: 13px;
+        }
+        .list-item:last-child {
+            border-bottom: none;
+        }
+        .list-item .left {
+            float: left;
+            width: 75%;
+        }
+        .list-item .name {
+            font-weight: bold;
+            color: #2c3e50;
+            line-height: 17px;
+        }
+        .list-item .details {
+            font-size: 11px;
+            color: #888888;
+            margin-top: 2px;
+        }
+        .list-item .badge {
+            float: right;
+            font-size: 11px;
+            color: #6c7a89;
+            background-color: #eef1f5;
+            padding: 2px 6px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 3px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #7a869a;
+            padding: 14px;
+            background-color: #eef1f5;
+            border-top: 1px solid #d5d9e0;
+            text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+            line-height: 1.4;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="CydiaIcon.png" alt="Cydia Repo Icon" width="72" height="72">
+            <h1>noname122021 Cydia Repo</h1>
+            <p>Legacy iOS 6 Tweaks & Packages</p>
+        </div>
+
+        <div class="content">
+            <!-- Direct static Cydia link with dynamic fallback -->
+            <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://noname122021.github.io/cydia-repo/" class="btn-cydia" id="cydiaLink">Add to Cydia</a>
+            
+            <div class="repo-url-box" id="repoUrlText">https://noname122021.github.io/cydia-repo/</div>
+
+            <div class="section-header">
+                <div class="section-title">Available Tweaks</div>
+                <div class="section-badge">1 Package</div>
+            </div>
+
+            <!-- DictaKey Tweak Card -->
+            <div class="card" id="dictakey">
+                <div class="card-header" onclick="toggleDetails('dictakey-body', 'dictakey-arrow');">
+                    <img src="CydiaIcon.png" class="card-icon" alt="DictaKey" width="44" height="44">
+                    <div class="card-meta">
+                        <div class="card-title">
+                            DictaKey
+                            <span class="version-tag">v1.0.0</span>
+                        </div>
+                        <div class="card-subtitle">Offline Voice Dictation Keyboard Tweak</div>
+                    </div>
+                    <div class="card-arrow" id="dictakey-arrow">&#9654;</div>
+                </div>
+
+                <div class="card-body" id="dictakey-body">
+                    <div class="card-desc">
+                        Brings completely offline, on-device voice dictation to iOS 6. Injects a skeuomorphic microphone dictation key into the native keyboard, streams low-latency audio into an optimized Vosk Kaldi speech recognition model, and types recognized words into any text input field in real time. Features fast integer VAD, recognizer reuse (~0.5s first-word latency even on iPhone 4), and zero-overhead keyboard typing.
+                    </div>
+
+                    <div class="sub-group-title">Base Package</div>
+                    <div class="list-group">
+                        <div class="list-item">
+                            <div class="left">
+                                <div class="name">DictaKey</div>
+                                <div class="details">Keyboard hook & Vosk runtime engine</div>
+                            </div>
+                            <span class="badge">4.2 MB</span>
+                        </div>
+                    </div>
+
+                    <div class="sub-group-title">Available Language Models (Baked Kaldi FST)</div>
+                    <div class="list-group">
+                        <div class="list-item">
+                            <div class="left">
+                                <div class="name">Russian (Русский)</div>
+                                <div class="details">Full 250k universal vocabulary with punctuation, baked caches</div>
+                            </div>
+                            <span class="badge">61 MB</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="left">
+                                <div class="name">Russian Small (Русский Компактный)</div>
+                                <div class="details">iPhone 4 / A4 optimized (15k conversational vocab)</div>
+                            </div>
+                            <span class="badge">40 MB</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="left">
+                                <div class="name">English (US)</div>
+                                <div class="details">Baked caches. Punctuation: comma, period, colon, dash, hyphen, ! ?</div>
+                            </div>
+                            <span class="badge">54 MB</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="left">
+                                <div class="name">Ukrainian (Українська)</div>
+                                <div class="details">Baked caches. Punctuation: кома, двокрапка, тире, дефіс</div>
+                            </div>
+                            <span class="badge">74 MB</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="left">
+                                <div class="name">German (Deutsch)</div>
+                                <div class="details">Baked caches. Native spoken punctuation engine</div>
+                            </div>
+                            <span class="badge">59 MB</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="left">
+                                <div class="name">French (Français)</div>
+                                <div class="details">Baked caches. Native spoken punctuation engine</div>
+                            </div>
+                            <span class="badge">58 MB</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="left">
+                                <div class="name">Spanish (Español)</div>
+                                <div class="details">Baked caches. Native spoken punctuation engine</div>
+                            </div>
+                            <span class="badge">55 MB</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="left">
+                                <div class="name">Italian (Italiano)</div>
+                                <div class="details">Baked caches. Native spoken punctuation engine</div>
+                            </div>
+                            <span class="badge">68 MB</span>
+                        </div>
+                    </div>
+
+                    <div class="sub-group-title">Compatibility & Requirements</div>
+                    <div class="list-group">
+                        <div class="list-item">
+                            <span class="name">Architecture</span>
+                            <span class="badge">ARMv7 (32-bit)</span>
+                        </div>
+                        <div class="list-item">
+                            <span class="name">Target OS</span>
+                            <span class="badge">iOS 6.0 – 6.1.6</span>
+                        </div>
+                        <div class="list-item">
+                            <span class="name">Dependencies</span>
+                            <span class="badge">MobileSubstrate, PreferenceLoader</span>
+                        </div>
+                    </div>
+
+                    <div class="sub-group-title">Recommended Companion</div>
+                    <div class="list-group">
+                        <div class="list-item">
+                            <div class="left">
+                                <div class="name"><a href="http://repo.legacyreborn.cfd/" style="color:#0088cc;text-decoration:none;">LegacyRay &amp; TLS Fix</a></div>
+                                <div class="details">Enables modern TLS 1.2+ for GitHub Releases &amp; HTTPS (repo.legacyreborn.cfd)</div>
+                            </div>
+                            <span class="badge">Recommended</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Future Tweaks Placeholder -->
+            <div style="text-align: center; padding: 12px; font-size: 12px; color: #8c97a8;">
+                More iOS 6 tweaks and utilities will appear here.
+            </div>
+        </div>
+
+        <div class="footer">
+            noname122021 Cydia Repository<br>
+            Powered by GitHub Pages & APT
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // Pure ECMAScript 3 / 5 for legacy MobileSafari (iOS 2 - 6)
+        (function() {
+            try {
+                var loc = window.location.href;
+                var clean = loc.split('#')[0].split('?')[0];
+                if (clean.charAt(clean.length - 1) !== '/') {
+                    clean += '/';
+                }
+                var btn = document.getElementById('cydiaLink');
+                if (btn) {
+                    btn.href = 'cydia://url/https://cydia.saurik.com/api/share#?source=' + encodeURIComponent(clean);
+                }
+                var box = document.getElementById('repoUrlText');
+                if (box) {
+                    box.innerHTML = clean;
+                }
+                if (window.location.hash === '#dictakey' || window.location.hash === '#dictakey-body') {
+                    toggleDetails('dictakey-body', 'dictakey-arrow');
+                }
+            } catch (e) {
+                // Ignore, static link in HTML is guaranteed to work
+            }
+        })();
+
+        window.onhashchange = function() {
+            if (window.location.hash === '#dictakey') {
+                var b = document.getElementById('dictakey-body');
+                if (b && b.style.display !== 'block') {
+                    toggleDetails('dictakey-body', 'dictakey-arrow');
+                }
+            }
+        };
+
+        function toggleDetails(bodyId, arrowId) {
+            var body = document.getElementById(bodyId);
+            var arrow = document.getElementById(arrowId);
+            if (!body) return;
+            if (body.style.display === 'block') {
+                body.style.display = 'none';
+                if (arrow) arrow.innerHTML = '&#9654;';
+            } else {
+                body.style.display = 'block';
+                if (arrow) arrow.innerHTML = '&#9660;';
+            }
+        }
+    </script>
+</body>
+</html>

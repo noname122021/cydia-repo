@@ -1,0 +1,297 @@
+Package: com.noname122021.dictakey
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: noname122021
+Installed-Size: 9812
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/com.noname122021.dictakey_1.0.0_iphoneos-arm.deb
+Size: 4298606
+MD5sum: 814ffc5689592b0d55cc65a78dc1935c
+SHA1: bee1c3e8d46c27fe2fab87380235a7cdd041d1f4
+SHA256: a5c569607274eda06e0be8f789945e9c13e6d6f3045f6593ba15a66ad0d62bb1
+Section: Tweaks
+Description: Offline multilingual voice dictation keyboard tweak for iOS 6
+Author: noname122021
+Name: DictaKey
+Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+
+Package: com.noname122021.dictakey-model-de
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: noname122021
+Depends: com.noname122021.dictakey (>= 1.0.0)
+Conflicts: com.noname122021.dictakey-model-de-small
+Replaces: com.noname122021.dictakey-model-de-small
+Provides: com.noname122021.dictakey-model-de-small
+Filename: debs/com.noname122021.dictakey-model-de_1.0.0_iphoneos-arm.deb
+Size: 59498602
+MD5sum: 50de58917638d17abd0b725e8bc5a6af
+SHA1: 88c30d780b5bca0a5e4abb1f9f850a04d576d52c
+SHA256: 03c20e2cb96a0e74b86a183e6c7900dd59a0cdaee912291aa10e016b0885fbba
+Section: Addons (DictaKey)
+Description: German - offline speech recognition model for DictaKey (full vocabulary).
+Tag: purpose::extension
+Author: noname122021
+Name: DictaKey Model: German
+Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+
+Package: com.noname122021.dictakey-model-de-small
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: noname122021
+Depends: com.noname122021.dictakey (>= 1.0.0)
+Conflicts: com.noname122021.dictakey-model-de
+Replaces: com.noname122021.dictakey-model-de
+Provides: com.noname122021.dictakey-model-de
+Filename: debs/com.noname122021.dictakey-model-de-small_1.0.0_iphoneos-arm.deb
+Size: 43580508
+MD5sum: 746ed5686e0eff7508383240c1343246
+SHA1: ac6252d003b3ed666a94fa1aaf3819efce65897b
+SHA256: 2af4e8f1b3809df590ce08038ce8d7e6a639bc75cb352aa902c8d606ed166f03
+Section: Addons (DictaKey)
+Description: German (Small) - lightweight offline speech recognition model for DictaKey (compact vocabulary).
+Tag: purpose::extension
+Author: noname122021
+Name: DictaKey Model: German (Small)
+Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+
+Package: com.noname122021.dictakey-model-en
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: noname122021
+Depends: com.noname122021.dictakey (>= 1.0.0)
+Conflicts: com.noname122021.dictakey-model-en-small
+Replaces: com.noname122021.dictakey-model-en-small
+Provides: com.noname122021.dictakey-model-en-small
+Filename: debs/com.noname122021.dictakey-model-en_1.0.0_iphoneos-arm.deb
+Size: 54277454
+MD5sum: b8009ae495609ca7e27be70245a357ab
+SHA1: 96466d8812caca3c63e5c0135ab4f5894c5da24c
+SHA256: 97b96963bc54d9759208decc8b19f4f2e07b0c842445e264612f0c34c16f9508
+Section: Addons (DictaKey)
+Description: English - offline speech recognition model for DictaKey (full vocabulary).
+Tag: purpose::extension
+Author: noname122021
+Name: DictaKey Model: English
+Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+
+Package: com.noname122021.dictakey-model-en-small
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: noname122021
+Depends: com.noname122021.dictakey (>= 1.0.0)
+Conflicts: com.noname122021.dictakey-model-en
+Replaces: com.noname122021.dictakey-model-en
+Provides: com.noname122021.dictakey-model-en
+Filename: debs/com.noname122021.dictakey-model-en-small_1.0.0_iphoneos-arm.deb
+Size: 47659090
+MD5sum: ecabcf15eab3ce5665afbcde29fa62de
+SHA1: b1a142d90cc5c39e1a58d39f1d63c45b026df6ce
+SHA256: c104a39d387ec26a4983ac74ab8a8f2dcaec6a5f5a92ba0609c31ad8071ed272
+Section: Addons (DictaKey)
+Description: English (Small) - lightweight offline speech recognition model for DictaKey (compact vocabulary).
+Tag: purpose::extension
+Author: noname122021
+Name: DictaKey Model: English (Small)
+Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+
+Package: com.noname122021.dictakey-model-es
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: noname122021
+Depends: com.noname122021.dictakey (>= 1.0.0)
+Conflicts: com.noname122021.dictakey-model-es-small
+Replaces: com.noname122021.dictakey-model-es-small
+Provides: com.noname122021.dictakey-model-es-small
+Filename: debs/com.noname122021.dictakey-model-es_1.0.0_iphoneos-arm.deb
+Size: 55897004
+MD5sum: fda4101008b48364eaf932f51e30d369
+SHA1: 62e7a42632553d9b84123e02c17ba03cc71ce41a
+SHA256: b0be0f40adc6e3fe940a7454f2ac06f8ca1820ee4950a8e78e856e3e60a8657d
+Section: Addons (DictaKey)
+Description: Spanish - offline speech recognition model for DictaKey (full vocabulary).
+Tag: purpose::extension
+Author: noname122021
+Name: DictaKey Model: Spanish
+Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+
+Package: com.noname122021.dictakey-model-es-small
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: noname122021
+Depends: com.noname122021.dictakey (>= 1.0.0)
+Conflicts: com.noname122021.dictakey-model-es
+Replaces: com.noname122021.dictakey-model-es
+Provides: com.noname122021.dictakey-model-es
+Filename: debs/com.noname122021.dictakey-model-es-small_1.0.0_iphoneos-arm.deb
+Size: 41941686
+MD5sum: bda1e58734d8740e84470ec4f9981359
+SHA1: 8f5ff77ce32ab8e776598dcd95ab1e9c9235cb0f
+SHA256: 534c63200e685068589816aa32afcfa2d45a9c7671967cc0248a13e50e79e24f
+Section: Addons (DictaKey)
+Description: Spanish (Small) - lightweight offline speech recognition model for DictaKey (compact vocabulary).
+Tag: purpose::extension
+Author: noname122021
+Name: DictaKey Model: Spanish (Small)
+Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+
+Package: com.noname122021.dictakey-model-fr
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: noname122021
+Depends: com.noname122021.dictakey (>= 1.0.0)
+Conflicts: com.noname122021.dictakey-model-fr-small
+Replaces: com.noname122021.dictakey-model-fr-small
+Provides: com.noname122021.dictakey-model-fr-small
+Filename: debs/com.noname122021.dictakey-model-fr_1.0.0_iphoneos-arm.deb
+Size: 58457964
+MD5sum: 2aba84452eb32411ade61e2c7e31dac6
+SHA1: 71fe8ddbc27716036931d8ee9add458f8d929833
+SHA256: db2e275bffb69327fe755cfea5935bd6b8e5dd76cd03a2a4c668e6c284e2fcc3
+Section: Addons (DictaKey)
+Description: French - offline speech recognition model for DictaKey (full vocabulary).
+Tag: purpose::extension
+Author: noname122021
+Name: DictaKey Model: French
+Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+
+Package: com.noname122021.dictakey-model-fr-small
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: noname122021
+Depends: com.noname122021.dictakey (>= 1.0.0)
+Conflicts: com.noname122021.dictakey-model-fr
+Replaces: com.noname122021.dictakey-model-fr
+Provides: com.noname122021.dictakey-model-fr
+Filename: debs/com.noname122021.dictakey-model-fr-small_1.0.0_iphoneos-arm.deb
+Size: 46477296
+MD5sum: 4ea69400c14076ef1167824be7f16dea
+SHA1: 01d58845465f68283d97b54903fe712f9d6abc50
+SHA256: 8096e13f1f4319a91f4797877cc0db0f68591e6a22ad8bf5f0fbb01afe73b593
+Section: Addons (DictaKey)
+Description: French (Small) - lightweight offline speech recognition model for DictaKey (compact vocabulary).
+Tag: purpose::extension
+Author: noname122021
+Name: DictaKey Model: French (Small)
+Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+
+Package: com.noname122021.dictakey-model-it
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: noname122021
+Depends: com.noname122021.dictakey (>= 1.0.0)
+Conflicts: com.noname122021.dictakey-model-it-small
+Replaces: com.noname122021.dictakey-model-it-small
+Provides: com.noname122021.dictakey-model-it-small
+Filename: debs/com.noname122021.dictakey-model-it_1.0.0_iphoneos-arm.deb
+Size: 68640604
+MD5sum: d35bc1d4e9071b049099d26f1e0b898f
+SHA1: 38f0901ed74974316447084a2fe010af8779e526
+SHA256: 695910246393e542774340a0045c7e8c8925f079749be965dc5d8c7fc35a1699
+Section: Addons (DictaKey)
+Description: Italian - offline speech recognition model for DictaKey (full vocabulary).
+Tag: purpose::extension
+Author: noname122021
+Name: DictaKey Model: Italian
+Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+
+Package: com.noname122021.dictakey-model-it-small
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: noname122021
+Depends: com.noname122021.dictakey (>= 1.0.0)
+Conflicts: com.noname122021.dictakey-model-it
+Replaces: com.noname122021.dictakey-model-it
+Provides: com.noname122021.dictakey-model-it
+Filename: debs/com.noname122021.dictakey-model-it-small_1.0.0_iphoneos-arm.deb
+Size: 48284184
+MD5sum: 052d206a368dbfe6bfc488a0d70cf5f2
+SHA1: 60fa85759b74cfcebd3757c09235684b014a07f1
+SHA256: d8ba250fad71e59f289b5bbf11d7664cb0194a3922327c3064bd8078a160407f
+Section: Addons (DictaKey)
+Description: Italian (Small) - lightweight offline speech recognition model for DictaKey (compact vocabulary).
+Tag: purpose::extension
+Author: noname122021
+Name: DictaKey Model: Italian (Small)
+Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+
+Package: com.noname122021.dictakey-model-ru
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: noname122021
+Depends: com.noname122021.dictakey (>= 1.0.0)
+Conflicts: com.noname122021.dictakey-model-ru-small
+Replaces: com.noname122021.dictakey-model-ru-small
+Provides: com.noname122021.dictakey-model-ru-small
+Filename: debs/com.noname122021.dictakey-model-ru_1.0.0_iphoneos-arm.deb
+Size: 61716450
+MD5sum: 418b8935c15578109cf778b7d764cfd5
+SHA1: 0bac1be5e4a7778692741fce4de241ed35bed430
+SHA256: 1bfd84f19a1b0fdd3ee2b521927d46e1cf6a5ce3a49dfa6bdc268e8a4b6d18e5
+Section: Addons (DictaKey)
+Description: Russian - offline speech recognition model for DictaKey (full vocabulary).
+Tag: purpose::extension
+Author: noname122021
+Name: DictaKey Model: Russian
+Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+
+Package: com.noname122021.dictakey-model-ru-small
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: noname122021
+Depends: com.noname122021.dictakey (>= 1.0.0)
+Conflicts: com.noname122021.dictakey-model-ru
+Replaces: com.noname122021.dictakey-model-ru
+Provides: com.noname122021.dictakey-model-ru
+Filename: debs/com.noname122021.dictakey-model-ru-small_1.0.0_iphoneos-arm.deb
+Size: 45283668
+MD5sum: 06ed7be73d0a0131967ecc4bff041bbe
+SHA1: 23c5f3a665da4e3670c3f1f41d5544ae6bba3e6a
+SHA256: 6fe59f670fde4e88d802f05f6704fe611763bcdcb3e23ae5ef0b8c96f930920e
+Section: Addons (DictaKey)
+Description: Russian (Small) - lightweight offline speech recognition model for DictaKey (compact vocabulary).
+Tag: purpose::extension
+Author: noname122021
+Name: DictaKey Model: Russian (Small)
+Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+
+Package: com.noname122021.dictakey-model-uk
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: noname122021
+Depends: com.noname122021.dictakey (>= 1.0.0)
+Conflicts: com.noname122021.dictakey-model-uk-small
+Replaces: com.noname122021.dictakey-model-uk-small
+Provides: com.noname122021.dictakey-model-uk-small
+Filename: debs/com.noname122021.dictakey-model-uk_1.0.0_iphoneos-arm.deb
+Size: 77675958
+MD5sum: 6ad8c6909411aa8bd6839e7fd64afefe
+SHA1: 928197cc19a00834e33341d6ba3ad7addd95e239
+SHA256: 4d626be495654fa7457c618ac663ade695d011f4fc84055f6ded0662a7ebed85
+Section: Addons (DictaKey)
+Description: Ukrainian - offline speech recognition model for DictaKey (full vocabulary).
+Tag: purpose::extension
+Author: noname122021
+Name: DictaKey Model: Ukrainian
+Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+
+Package: com.noname122021.dictakey-model-uk-small
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: noname122021
+Depends: com.noname122021.dictakey (>= 1.0.0)
+Conflicts: com.noname122021.dictakey-model-uk
+Replaces: com.noname122021.dictakey-model-uk
+Provides: com.noname122021.dictakey-model-uk
+Filename: debs/com.noname122021.dictakey-model-uk-small_1.0.0_iphoneos-arm.deb
+Size: 61209906
+MD5sum: aa96bd1a6a50d80cafe3409d937924b6
+SHA1: 3e2f34f00c398a26143a3b0f23ef3dac1710714e
+SHA256: 1104be11e78f7c88a9bf649e27e5bcea19717bf68a3dbf6431245b35fc68d515
+Section: Addons (DictaKey)
+Description: Ukrainian (Small) - lightweight offline speech recognition model for DictaKey (compact vocabulary).
+Tag: purpose::extension
+Author: noname122021
+Name: DictaKey Model: Ukrainian (Small)
+Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+
