@@ -7,11 +7,11 @@ Architectures: iphoneos-arm
 Components: main
 Description: DictaKey Speech Recognition & Offline Kaldi Models for iOS 6 by noname122021
 MD5Sum:
- c342627679e757871f7388cef6bcd614 12800 Packages
- 3e47b0cd27b1baffbaba3c59a50473bf 2596 Packages.bz2
+ 273f20f4a0e55a922947970332ca78cf 12743 Packages
+ 8318d498a97614f48f23579e00e225de 2550 Packages.bz2
 SHA1:
- a49495f2c53e3bdfc34b2a34c4662bc01f59f734 12800 Packages
- cf5791d93bba922d1b25a992af11f232eab2ca21 2596 Packages.bz2
+ 1594ef894a99d3c050086512a11661b0ffddcf28 12743 Packages
+ cdbc9fa33e382b78ad15234506252699f9bc5fcc 2550 Packages.bz2
 SHA256:
- ca392e2fc749c9cf2a484a06913ceaaadb1ed694cf1ca343ae4aee49df6adddc 12800 Packages
- 822ab0d4b14bd554661ffa7e9a176d822f58cef6a1155554544b149bbfbe978f 2596 Packages.bz2
+ 276fa4b206abdc0c93cf6af26ebd7e881ca8e49c1775b3890058e2d925d1063d 12743 Packages
+ 21e37d91b50b8233af745dc5ad596dca3e749cf6d1889bb53bc760786d41d2c0 2550 Packages.bz2
