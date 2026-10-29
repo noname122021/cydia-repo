@@ -194,6 +194,28 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.25);
             margin-right: 12px;
         }
+        .card-icon-css {
+            float: left;
+            width: 44px;
+            height: 44px;
+            -webkit-border-radius: 9px;
+            border-radius: 9px;
+            background: #1c222c;
+            background: -webkit-gradient(linear, left top, left bottom, from(#2c3442), to(#161a22));
+            background: -moz-linear-gradient(top, #2c3442, #161a22);
+            background: linear-gradient(to bottom, #2c3442, #161a22);
+            border: 1px solid #3c4658;
+            -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.2);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.2);
+            margin-right: 12px;
+            text-align: center;
+            line-height: 42px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+        }
         .card-meta {
             float: left;
             width: 72%;
@@ -325,7 +347,39 @@
 
             <div class="section-header">
                 <div class="section-title">Available Tweaks</div>
-                <div class="section-badge">1 Package</div>
+                <div class="section-badge">2 Packages</div>
+            </div>
+
+            <!-- VideoControls+ Tweak Card -->
+            <div class="card" id="videocontrolsplus">
+                <div class="card-header" onclick="toggleDetails('videocontrolsplus-body', 'videocontrolsplus-arrow');">
+                    <div class="card-icon-css">V+</div>
+                    <div class="card-meta">
+                        <div class="card-title">
+                            VideoControls+
+                            <span class="version-tag">v1.0.0</span>
+                        </div>
+                        <div class="card-subtitle">Modern Skip &amp; Speed Controls for Video Player</div>
+                    </div>
+                    <div class="card-arrow" id="videocontrolsplus-arrow">&#9654;</div>
+                </div>
+
+                <div class="card-body" id="videocontrolsplus-body">
+                    <div class="card-desc">
+                        Replaces obsolete chapter controls in the native iOS media player with &plusmn;10s skip buttons and a 1-tap horizontal playback speed selector HUD (0.5x, 0.75x, 1x, 1.25x, 1.5x, 2x). Retains custom playback speed across scrubbing and unpausing. Compatible with iOS 4.3 through 6.1.6.
+                    </div>
+
+                    <div class="sub-group-title">Package Details</div>
+                    <div class="list-group">
+                        <div class="list-item">
+                            <div class="left">
+                                <div class="name">VideoControls+</div>
+                                <div class="details">MediaPlayer.framework transport hooks &amp; HUD</div>
+                            </div>
+                            <span class="badge">21 KB</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- DictaKey Tweak Card -->
@@ -478,6 +532,8 @@
                 }
                 if (window.location.hash === '#dictakey' || window.location.hash === '#dictakey-body') {
                     toggleDetails('dictakey-body', 'dictakey-arrow');
+                } else if (window.location.hash === '#videocontrolsplus' || window.location.hash === '#videocontrolsplus-body') {
+                    toggleDetails('videocontrolsplus-body', 'videocontrolsplus-arrow');
                 }
             } catch (e) {
                 // Ignore, static link in HTML is guaranteed to work
@@ -489,6 +545,11 @@
                 var b = document.getElementById('dictakey-body');
                 if (b && b.style.display !== 'block') {
                     toggleDetails('dictakey-body', 'dictakey-arrow');
+                }
+            } else if (window.location.hash === '#videocontrolsplus') {
+                var b = document.getElementById('videocontrolsplus-body');
+                if (b && b.style.display !== 'block') {
+                    toggleDetails('videocontrolsplus-body', 'videocontrolsplus-arrow');
                 }
             }
         };
