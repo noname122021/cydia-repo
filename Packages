@@ -296,16 +296,16 @@ Name: DictaKey Model: Ukrainian (Small)
 Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
 
 Package: com.noname122021.videocontrolsplus
-Version: 1.0.2
+Version: 1.0.3
 Architecture: iphoneos-arm
 Maintainer: noname122021
-Installed-Size: 148
+Installed-Size: 160
 Depends: mobilesubstrate
-Filename: debs/com.noname122021.videocontrolsplus_1.0.2_iphoneos-arm.deb
-Size: 32290
-MD5sum: ba8e32ff888612fc123bd7b2a2b7e88a
-SHA1: 3d4b66edf7fd459a89011cb4b1b798a7875e0040
-SHA256: c1129511591b60ca88930a1840cdcf7952f972c88c10ac98f5b87f8a2a339bf3
+Filename: debs/com.noname122021.videocontrolsplus_1.0.3_iphoneos-arm.deb
+Size: 33326
+MD5sum: d2d9136d7347afe6985e3283b2016170
+SHA1: 9380e9391462f5ae6758df7a5b6435b0413d0e1d
+SHA256: 09e20c3f5c9fcb46fd535b817b88da8ce8056c4f2af49a5b27c94a77f9446a82
 Section: Tweaks
 Description: Modern skip and speed controls for iOS 6 video player.
 Author: noname122021
