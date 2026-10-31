@@ -296,16 +296,16 @@ Name: DictaKey Model: Ukrainian (Small)
 Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
 
 Package: com.noname122021.perfhud
-Version: 1.1.1
+Version: 1.2.0
 Architecture: iphoneos-arm
 Maintainer: noname122021
 Installed-Size: 164
 Depends: mobilesubstrate, preferenceloader
-Filename: debs/com.noname122021.perfhud_1.1.1_iphoneos-arm.deb
-Size: 17688
-MD5sum: bb604c5a9d5feb325e9cc2f7768c6e8a
-SHA1: c793882fbed2414b24b04909c598a264f01d4abd
-SHA256: 4200baa28ffd2219374e1c5a505d73c0b5a5196e8bea738c98a83752a4134351
+Filename: debs/com.noname122021.perfhud_1.2.0_iphoneos-arm.deb
+Size: 18024
+MD5sum: 161fb440fafd6ed15a596e4d38c33e54
+SHA1: 382255c1b07cf416f9ddddbdbae30638040737e9
+SHA256: fcbe676fb69745d625f85875494edc766e439abc0ff9ac22a051bc9b17a1800c
 Section: Tweaks
 Description: Zero-footprint real-time performance HUD for iOS 6.
 Author: noname122021

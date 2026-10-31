@@ -36,7 +36,7 @@ jobs:
           DICTAKEY_V100_URL="https://github.com/noname122021/dictakey/releases/download/v1.0.0"
           DICTAKEY_V101_URL="https://github.com/noname122021/dictakey/releases/download/v1.0.1"
           VIDEOCONTROLS_URL="https://github.com/noname122021/videocontrolsplus/releases/download/v1.0.3"
-          PERFHUD_URL="https://github.com/noname122021/perfhud/releases/download/v1.1.1"
+          PERFHUD_URL="https://github.com/noname122021/perfhud/releases/download/v1.2.0"
 
           grep "^Filename: debs/" Packages | awk '{print $2}' | while read -r deb_path; do
             deb_name=$(basename "$deb_path")
