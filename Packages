@@ -1,14 +1,14 @@
 Package: com.noname122021.dictakey
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Maintainer: noname122021
 Installed-Size: 9812
 Depends: mobilesubstrate, preferenceloader
-Filename: debs/com.noname122021.dictakey_1.0.0_iphoneos-arm.deb
-Size: 4298606
-MD5sum: 814ffc5689592b0d55cc65a78dc1935c
-SHA1: bee1c3e8d46c27fe2fab87380235a7cdd041d1f4
-SHA256: a5c569607274eda06e0be8f789945e9c13e6d6f3045f6593ba15a66ad0d62bb1
+Filename: debs/com.noname122021.dictakey_1.0.1_iphoneos-arm.deb
+Size: 2754850
+MD5sum: 9196a23e5abe85b7944f18a67a219f21
+SHA1: a9965eaad1e717ee5a5909d68cf64a689ae6a688
+SHA256: 7879f4474a993c54676cfd033a4cbe9e932520f98e217ccd99c65ed3854da934
 Section: Tweaks
 Description: Offline multilingual voice dictation keyboard tweak for iOS 6
 Author: noname122021

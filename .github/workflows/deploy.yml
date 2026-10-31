@@ -33,7 +33,8 @@ jobs:
 
       - name: Fetch deb packages from GitHub Releases
         run: |
-          DICTAKEY_URL="https://github.com/noname122021/dictakey/releases/download/v1.0.0"
+          DICTAKEY_V100_URL="https://github.com/noname122021/dictakey/releases/download/v1.0.0"
+          DICTAKEY_V101_URL="https://github.com/noname122021/dictakey/releases/download/v1.0.1"
           VIDEOCONTROLS_URL="https://github.com/noname122021/videocontrolsplus/releases/download/v1.0.3"
           PERFHUD_URL="https://github.com/noname122021/perfhud/releases/download/v1.0.0"
 
@@ -44,8 +45,10 @@ jobs:
               curl -sSL -f -o "_site/debs/$deb_name" "$VIDEOCONTROLS_URL/$deb_name"
             elif [[ "$deb_name" == *"perfhud"* ]]; then
               curl -sSL -f -o "_site/debs/$deb_name" "$PERFHUD_URL/$deb_name"
+            elif [[ "$deb_name" == *"dictakey_1.0.1"* ]]; then
+              curl -sSL -f -o "_site/debs/$deb_name" "$DICTAKEY_V101_URL/$deb_name"
             else
-              curl -sSL -f -o "_site/debs/$deb_name" "$DICTAKEY_URL/$deb_name"
+              curl -sSL -f -o "_site/debs/$deb_name" "$DICTAKEY_V100_URL/$deb_name"
             fi
           done
           echo "Downloaded debs:"
