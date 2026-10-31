@@ -7,11 +7,11 @@ Architectures: iphoneos-arm
 Components: main
 Description: iOS 6 Revival Tweaks & Packages by noname122021
 MD5Sum:
- bbb0c42c2b0233d32755ffb094334d77 13543 Packages
- 5876acd205e44438a1d3cf3f4b7e84ac 2776 Packages.bz2
+ 7ad3cf94da3c9489895b2365683bfbb1 13543 Packages
+ ef017b17360468c0ac391ae42cdea0d9 2787 Packages.bz2
 SHA1:
- 2d450695e77ffabedc72f96a2206a3b2bd1a3a64 13543 Packages
- 13a463811314110d0dd1747ea720210bf6ea52fc 2776 Packages.bz2
+ 2ec32cbd318be3ac2dc702c809e3181a3ed1a4d6 13543 Packages
+ 91bb4873ccfc6209f838fa14490211f4c5dfa066 2787 Packages.bz2
 SHA256:
- fb6de8e3234fdb103e9f35d39762f3c9ac18b58f5a840c5f064a3c03f6068fe4 13543 Packages
- 8339b6e5965cd3816054463ffd96d5e7b5edc4b70d8fbe89cae5c876912cffa8 2776 Packages.bz2
+ 397f31bc5657968f3078e5624472144cd01379f9d2665253ab282c2205b5da11 13543 Packages
+ 1f42c9f9b990c761e27fc5cc485e64c3d24b21bcc80fd72d954ff944fdcd4d3a 2787 Packages.bz2
