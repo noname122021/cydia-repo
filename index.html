@@ -347,7 +347,38 @@
 
             <div class="section-header">
                 <div class="section-title">Available Tweaks</div>
-                <div class="section-badge">2 Packages</div>
+                <div class="section-badge">3 Packages</div>
+            </div>
+
+            <!-- PerfHUD Tweak Card -->
+            <div class="card" id="perfhud">
+                <div class="card-header" onclick="toggleDetails('perfhud-body', 'perfhud-arrow');">
+                    <div class="card-icon-css">HUD</div>
+                    <div class="card-meta">
+                        <div class="card-title">
+                            PerfHUD
+                            <span class="version-tag">v1.0.0</span>
+                        </div>
+                        <div class="card-subtitle">Real-Time Performance HUD &amp; CLI Telemetry</div>
+                    </div>
+                    <div class="card-arrow" id="perfhud-arrow">&#9654;</div>
+                </div>
+
+                <div class="card-body" id="perfhud-body">
+                    <div class="card-desc">
+                        Lightweight real-time performance overlay for iOS 6. Displays CADisplayLink FPS, total &amp; per-core CPU utilization with dynamic color thresholds, precise sub-MB RAM consumption, stacked memory breakdown bar (Wired/Active/Inactive/Free), and tap-to-cycle screen corner placement. Includes <code>/usr/bin/perfhud-cli</code> for live terminal telemetry streaming via shared memory. Master switch and customization in Settings.app.
+                    </div>
+
+                    <div class="sub-group-title">Package Details</div>
+                    <div class="list-group">
+                        <div class="list-item">
+                            <div class="left">
+                                <div class="name">PerfHUD</div>
+                                <div class="details">SpringBoard HUD overlay + perfhud-cli utility</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- VideoControls+ Tweak Card -->

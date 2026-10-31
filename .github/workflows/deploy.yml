@@ -35,12 +35,15 @@ jobs:
         run: |
           DICTAKEY_URL="https://github.com/noname122021/dictakey/releases/download/v1.0.0"
           VIDEOCONTROLS_URL="https://github.com/noname122021/videocontrolsplus/releases/download/v1.0.3"
+          PERFHUD_URL="https://github.com/noname122021/perfhud/releases/download/v1.0.0"
 
           grep "^Filename: debs/" Packages | awk '{print $2}' | while read -r deb_path; do
             deb_name=$(basename "$deb_path")
             echo "Fetching $deb_name..."
             if [[ "$deb_name" == *"videocontrolsplus"* ]]; then
               curl -sSL -f -o "_site/debs/$deb_name" "$VIDEOCONTROLS_URL/$deb_name"
+            elif [[ "$deb_name" == *"perfhud"* ]]; then
+              curl -sSL -f -o "_site/debs/$deb_name" "$PERFHUD_URL/$deb_name"
             else
               curl -sSL -f -o "_site/debs/$deb_name" "$DICTAKEY_URL/$deb_name"
             fi
