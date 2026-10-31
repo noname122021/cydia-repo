@@ -295,17 +295,34 @@ Author: noname122021
 Name: DictaKey Model: Ukrainian (Small)
 Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
 
+Package: com.noname122021.languageiconsfix
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: noname122021
+Installed-Size: 56
+Depends: mobilesubstrate
+Filename: debs/com.noname122021.languageiconsfix_1.0.0_iphoneos-arm.deb
+Size: 2932
+MD5sum: 8d1e75a33130c64698ad775be334a480
+SHA1: 82477a36834a57c1eeb0ec48a40c928d65149bec
+SHA256: 192a4eabf94beb5bb08c8c809517435d3611f5641b74dba06605913998f7540f
+Section: Tweaks
+Description: Automatically refreshes icon caches via uicache after system language change on iOS 6.
+Author: noname122021
+Name: LanguageIconsFix
+Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+
 Package: com.noname122021.perfhud
-Version: 1.2.0
+Version: 1.2.1
 Architecture: iphoneos-arm
 Maintainer: noname122021
 Installed-Size: 164
 Depends: mobilesubstrate, preferenceloader
-Filename: debs/com.noname122021.perfhud_1.2.0_iphoneos-arm.deb
-Size: 18024
-MD5sum: 161fb440fafd6ed15a596e4d38c33e54
-SHA1: 382255c1b07cf416f9ddddbdbae30638040737e9
-SHA256: fcbe676fb69745d625f85875494edc766e439abc0ff9ac22a051bc9b17a1800c
+Filename: debs/com.noname122021.perfhud_1.2.1_iphoneos-arm.deb
+Size: 18786
+MD5sum: ace74da34d915afbab970ba0ab403443
+SHA1: ab7e82b2dd66c909e129ae9255316c2c11659b49
+SHA256: 80f006a3a6153685ef5982e91864cd21712a5b3718b483c4308d4d52d9823394
 Section: Tweaks
 Description: Zero-footprint real-time performance HUD for iOS 6.
 Author: noname122021

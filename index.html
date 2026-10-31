@@ -347,17 +347,17 @@
 
             <div class="section-header">
                 <div class="section-title">Available Tweaks</div>
-                <div class="section-badge">3 Packages</div>
+                <div class="section-badge">4 Packages</div>
             </div>
 
             <!-- PerfHUD Tweak Card -->
             <div class="card" id="perfhud">
                 <div class="card-header" onclick="toggleDetails('perfhud-body', 'perfhud-arrow');">
-                    <div class="card-icon-css">HUD</div>
+                    <div class="card-icon-css">PH</div>
                     <div class="card-meta">
                         <div class="card-title">
                             PerfHUD
-                            <span class="version-tag">v1.2.0</span>
+                            <span class="version-tag">v1.2.1</span>
                         </div>
                         <div class="card-subtitle">Real-Time Performance HUD &amp; CLI Telemetry</div>
                     </div>
@@ -366,7 +366,7 @@
 
                 <div class="card-body" id="perfhud-body">
                     <div class="card-desc">
-                        Lightweight real-time performance overlay for iOS 6. Displays CADisplayLink FPS, total &amp; per-core CPU utilization (dynamic single-core on A4), precise RAM tracking, Darwin network download/upload rates, and real-time IOKit NAND storage read/write throughput. Features Hide/Peek tap mechanic with 2s auto-return, per-metric toggles with CPU-saving mode, and <code>/usr/bin/perfhud-cli</code> for streaming telemetry over SSH.
+                        Lightweight real-time performance overlay for iOS 6. Displays CADisplayLink FPS, total &amp; per-core CPU utilization (dynamic single-core on A4), precise RAM tracking, Darwin network download/upload rates, and real-time IOKit NAND storage read/write throughput. Features Pass-Through gaming touch mode, Hide/Peek tap mechanic with 2s auto-return, per-metric toggles with CPU-saving mode, and <code>/usr/bin/perfhud-cli</code> for streaming telemetry over SSH.
                     </div>
 
                     <div class="sub-group-title">Package Details</div>
@@ -375,6 +375,37 @@
                             <div class="left">
                                 <div class="name">PerfHUD</div>
                                 <div class="details">SpringBoard HUD overlay + perfhud-cli utility</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LanguageIconsFix Tweak Card -->
+            <div class="card" id="languageiconsfix">
+                <div class="card-header" onclick="toggleDetails('languageiconsfix-body', 'languageiconsfix-arrow');">
+                    <div class="card-icon-css">LI</div>
+                    <div class="card-meta">
+                        <div class="card-title">
+                            LanguageIconsFix
+                            <span class="version-tag">v1.0.0</span>
+                        </div>
+                        <div class="card-subtitle">Fix Missing SpringBoard Icons on Language Switch</div>
+                    </div>
+                    <div class="card-arrow" id="languageiconsfix-arrow">&#9654;</div>
+                </div>
+
+                <div class="card-body" id="languageiconsfix-body">
+                    <div class="card-desc">
+                        Prevents application icons from disappearing from the SpringBoard home screen after changing the system language on jailbroken iOS 6 devices (especially on CoolBooter dual-boot setups). Completely automatic zero-config daemon hook.
+                    </div>
+
+                    <div class="sub-group-title">Package Details</div>
+                    <div class="list-group">
+                        <div class="list-item">
+                            <div class="left">
+                                <div class="name">LanguageIconsFix</div>
+                                <div class="details">SpringBoard icon state cache fix for iOS 6</div>
                             </div>
                         </div>
                     </div>
