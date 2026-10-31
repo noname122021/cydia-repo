@@ -2,8 +2,8 @@
 
 <p align="center">
   <img src="CydiaIcon.png" width="96" height="96" alt="Cydia Repository Icon" style="border-radius: 20px;"><br>
-  <b>Cydia Repository for iOS 6</b><br>
-  <i>DictaKey offline voice dictation and speech recognition models.</i>
+  <b>iOS 6 Revival Cydia Repository</b><br>
+  <i>Modern tweaks, enhancements, and offline speech tools for iOS 6.</i>
 </p>
 
 <p align="center">
@@ -29,11 +29,12 @@
 
 ## Available Packages
 
-### Base Tweaks
+### Tweaks
 
-| Package Name | Identifier | Version | Size | Description |
-|---|---|:---:|:---:|---|
-| **DictaKey** | `com.noname122021.dictakey` | 1.0.0 | 4.2 MB | Completely offline on-device speech-to-text dictation keyboard tweak for iOS 6. Injects a skeuomorphic dictation microphone key into `UIKeyboardImpl`. Features fast integer VAD, recognizer reuse (~0.5s first-word latency on iPhone 4), and zero-overhead keyboard typing. ([Source Code](https://github.com/noname122021/dictakey)) |
+| Package Name | Identifier | Version | Description |
+|---|---|:---:|---|
+| **VideoControls+** | `com.noname122021.videocontrolsplus` | 1.0.3 | Replaces obsolete chapter buttons with ±10s skip controls and adds an iOS 6-styled playback speed HUD (0.5x–2.0x) with Settings toggle. Works in Safari, YouTube, Videos app, and third-party players. ([Source Code](https://github.com/noname122021/videocontrolsplus)) |
+| **DictaKey** | `com.noname122021.dictakey` | 1.0.0 | Completely offline on-device speech-to-text dictation keyboard tweak for iOS 6. Injects a skeuomorphic dictation microphone key into `UIKeyboardImpl`. Features fast integer VAD, recognizer reuse (~0.5s first-word latency on iPhone 4), and zero-overhead keyboard typing. ([Source Code](https://github.com/noname122021/dictakey)) |
 
 ### Language Models for DictaKey (Vosk Kaldi FST)
 
