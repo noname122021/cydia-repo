@@ -313,16 +313,16 @@ Name: LanguageIconsFix
 Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
 
 Package: com.noname122021.perfhud
-Version: 1.3.0
+Version: 1.3.1
 Architecture: iphoneos-arm
 Maintainer: noname122021
 Installed-Size: 164
 Depends: mobilesubstrate, preferenceloader
-Filename: debs/com.noname122021.perfhud_1.3.0_iphoneos-arm.deb
-Size: 19406
-MD5sum: 042d2059261f473f77d97ef989c10567
-SHA1: 860ffc196f7d4f52f23805319c0eaa6ff4b70408
-SHA256: 2d08d0a7fc61cc1af6642f8cf135df04454cc4df8f27fd66ee8734d5c59b4945
+Filename: debs/com.noname122021.perfhud_1.3.1_iphoneos-arm.deb
+Size: 19414
+MD5sum: b9bea401a2ec2605462f84542f2c36c2
+SHA1: 280727f3ef2ab6a967c1418bb8a03f9c610fe82f
+SHA256: ad29cd6e6c48a984394edde55898ea91da6d3a230e48f4688257b4dafccb0572
 Section: Tweaks
 Description: Zero-footprint real-time performance HUD for iOS 6.
 Author: noname122021
