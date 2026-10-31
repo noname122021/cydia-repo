@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>PerfHUD</title>
+<style>
+  * { -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #c5ccd4 url('../pinstripe.png');
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    padding: 10px 9px 20px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid #a9afb7;
+    border-radius: 9px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+  .header {
+    display: table;
+    width: 100%;
+    padding: 12px;
+  }
+  .icon-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    width: 60px;
+  }
+  .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 9px;
+    display: block;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  }
+  .title-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+  }
+  .title {
+    font-size: 19px;
+    font-weight: bold;
+    color: #111;
+  }
+  .subtitle {
+    font-size: 13px;
+    color: #666;
+    margin-top: 2px;
+  }
+  .section-title {
+    margin: 14px 12px 6px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4c566c;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+  }
+  .content {
+    padding: 10px 12px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    padding: 8px 12px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  li:first-child { border-top: 0; }
+  li strong { color: #111; }
+  .version-badge {
+    display: inline-block;
+    background: #3875d7;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 1px 6px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+  }
+  .meta-row {
+    display: table;
+    width: 100%;
+    padding: 7px 12px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 13px;
+  }
+  .meta-row:first-child { border-top: 0; }
+  .meta-label { display: table-cell; color: #666; width: 40%; }
+  .meta-val { display: table-cell; color: #111; font-weight: bold; text-align: right; }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="header">
+    <div class="icon-wrap">
+      <img src="icon.png" class="icon" alt="PerfHUD">
+    </div>
+    <div class="title-wrap">
+      <div class="title">PerfHUD</div>
+      <div class="subtitle">Real-time performance overlay &amp; CLI telemetry for iOS 6</div>
+    </div>
+  </div>
+  <img src="screenshot.png" style="width: 100%; display: block; border-top: 1px solid #ddd; background: #000;" alt="PerfHUD Screenshot">
+</div>
+
+<div class="section-title">Features</div>
+<div class="card">
+  <ul>
+    <li><strong>CADisplayLink FPS:</strong> Direct screen-refresh frame rate with dynamic color alerts.</li>
+    <li><strong>CPU &amp; Cores:</strong> Real-time overall load plus individual core utilization sparklines. Dynamic single-core mode on iPhone 4 (A4).</li>
+    <li><strong>RAM Breakdown:</strong> Sub-megabyte precision (e.g. 240.35M) with dedicated tall auto-scaling sparkline and stacked Wired/Active/Inactive/Free memory bar.</li>
+    <li><strong>Network Speeds:</strong> Zero-overhead Darwin network stack reading (Download/Upload rates &amp; incoming sparkline).</li>
+    <li><strong>NAND Disk I/O:</strong> Hardware disk read/write throughput via IOKit and available storage with percentage bar.</li>
+    <li><strong>Hide / Peek &amp; Corner Jump:</strong> Tap to hide behind the screen edge for 2 seconds leaving a thin tab, or cycle clockwise between corners.</li>
+    <li><strong>Zero-Overhead CLI:</strong> Includes <code>/usr/bin/perfhud-cli</code> for streaming real-time metrics remotely over SSH from shared RAM.</li>
+  </ul>
+</div>
+
+<div class="section-title">Changelog</div>
+<div class="card">
+  <ul>
+    <li>
+      <div class="version-badge">v1.1.0</div>
+      <div>Added hardware NAND disk read/write metrics (IOKit) and network throughput. Added Hide/Peek tap mechanic with 2s auto-return. Added per-metric toggles in Settings with automatic HUD height scaling and CPU optimization.</div>
+    </li>
+    <li>
+      <div class="version-badge">v1.0.0</div>
+      <div>Initial release with FPS, CPU per-core load, RAM sub-MB tracking, stacked memory bar, and perfhud-cli telemetry.</div>
+    </li>
+  </ul>
+</div>
+
+<div class="section-title">Information</div>
+<div class="card">
+  <div class="meta-row"><div class="meta-label">Author</div><div class="meta-val">noname122021</div></div>
+  <div class="meta-row"><div class="meta-label">Version</div><div class="meta-val">1.1.0</div></div>
+  <div class="meta-row"><div class="meta-label">Architecture</div><div class="meta-val">armv7 (32-bit)</div></div>
+  <div class="meta-row"><div class="meta-label">Compatibility</div><div class="meta-val">iOS 6.0 – 6.1.6</div></div>
+</div>
+
+</body>
+</html>

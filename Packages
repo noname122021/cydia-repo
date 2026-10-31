@@ -296,21 +296,22 @@ Name: DictaKey Model: Ukrainian (Small)
 Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
 
 Package: com.noname122021.perfhud
-Version: 1.0.0
+Version: 1.1.0
 Architecture: iphoneos-arm
 Maintainer: noname122021
-Installed-Size: 140
+Installed-Size: 164
 Depends: mobilesubstrate, preferenceloader
-Filename: debs/com.noname122021.perfhud_1.0.0_iphoneos-arm.deb
-Size: 13258
-MD5sum: a8d4d86016e6e6c01684264b654f917b
-SHA1: 0f47620296120722fbc2edb7b82a46b35ef6b7d5
-SHA256: da35badff9a930630db9de76b31e4f03fc8e19fab294734b02a198cbf1419078
+Filename: debs/com.noname122021.perfhud_1.1.0_iphoneos-arm.deb
+Size: 17628
+MD5sum: 5bfbfe57159b0aade8f2c93d5049e6d7
+SHA1: bb645481721cd0fb85cae195b3bf2abcfc4604f7
+SHA256: dc1858cd6f8d239eb60245071d9e3cdfcf2861fc2894075c006f224c401a9d27
 Section: Tweaks
 Description: Zero-footprint real-time performance HUD for iOS 6.
 Author: noname122021
 Name: PerfHUD
-Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+Icon: https://noname122021.github.io/cydia-repo/depictions/com.noname122021.perfhud/icon.png
+Depiction: https://noname122021.github.io/cydia-repo/depictions/com.noname122021.perfhud/
 
 Package: com.noname122021.videocontrolsplus
 Version: 1.0.3

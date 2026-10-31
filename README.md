@@ -33,8 +33,9 @@
 
 | Package Name | Identifier | Version | Description |
 |---|---|:---:|---|
+| **PerfHUD** | `com.noname122021.perfhud` | 1.1.0 | Real-time performance overlay for iOS 6. Displays CADisplayLink FPS, total & per-core CPU utilization (dynamic single-core on A4), precise RAM consumption, network speeds, and hardware NAND flash read/write rates via IOKit. Includes Hide/Peek tap mechanic (2s auto-return) and `/usr/bin/perfhud-cli`. ([Source Code](https://github.com/noname122021/perfhud)) |
 | **VideoControls+** | `com.noname122021.videocontrolsplus` | 1.0.3 | Replaces obsolete chapter buttons with ±10s skip controls and adds an iOS 6-styled playback speed HUD (0.5x–2.0x) with Settings toggle. Works in Safari, YouTube, Videos app, and third-party players. ([Source Code](https://github.com/noname122021/videocontrolsplus)) |
-| **DictaKey** | `com.noname122021.dictakey` | 1.0.0 | Completely offline on-device speech-to-text dictation keyboard tweak for iOS 6. Injects a skeuomorphic dictation microphone key into `UIKeyboardImpl`. Features fast integer VAD, recognizer reuse (~0.5s first-word latency on iPhone 4), and zero-overhead keyboard typing. ([Source Code](https://github.com/noname122021/dictakey)) |
+| **DictaKey** | `com.noname122021.dictakey` | 1.0.1 | Completely offline on-device speech-to-text dictation keyboard tweak for iOS 6. Injects a skeuomorphic dictation microphone key into `UIKeyboardImpl`. Features fast integer VAD, recognizer reuse (~0.5s first-word latency on iPhone 4), and zero-overhead keyboard typing. ([Source Code](https://github.com/noname122021/dictakey)) |
 
 ### Language Models for DictaKey (Vosk Kaldi FST)
 
