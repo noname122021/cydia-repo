@@ -319,10 +319,10 @@ Maintainer: noname122021
 Installed-Size: 164
 Depends: mobilesubstrate, preferenceloader
 Filename: debs/com.noname122021.perfhud_1.3.0_iphoneos-arm.deb
-Size: 19408
-MD5sum: 67051c7d17bcabf4b4a8a235e09f35f5
-SHA1: b55ebf006161eda19b2ce2361e06eacd52e3dd0b
-SHA256: a1899b751998f6371e68908db35a46193365458d8c72fca50a65c179970c8f4f
+Size: 19406
+MD5sum: 042d2059261f473f77d97ef989c10567
+SHA1: 860ffc196f7d4f52f23805319c0eaa6ff4b70408
+SHA256: 2d08d0a7fc61cc1af6642f8cf135df04454cc4df8f27fd66ee8734d5c59b4945
 Section: Tweaks
 Description: Zero-footprint real-time performance HUD for iOS 6.
 Author: noname122021
