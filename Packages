@@ -296,16 +296,16 @@ Name: DictaKey Model: Ukrainian (Small)
 Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
 
 Package: com.noname122021.languageiconsfix
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Maintainer: noname122021
 Installed-Size: 56
 Depends: mobilesubstrate
-Filename: debs/com.noname122021.languageiconsfix_1.0.0_iphoneos-arm.deb
-Size: 2932
-MD5sum: 8d1e75a33130c64698ad775be334a480
-SHA1: 82477a36834a57c1eeb0ec48a40c928d65149bec
-SHA256: 192a4eabf94beb5bb08c8c809517435d3611f5641b74dba06605913998f7540f
+Filename: debs/com.noname122021.languageiconsfix_1.0.1_iphoneos-arm.deb
+Size: 2332
+MD5sum: 221e7476164cccff030e6c2f3f1a3fe7
+SHA1: f2859c6cb5916e87df9924056299f82b3438f10e
+SHA256: 6f026b7ec9ebf2a184de2003a7104c244918ed3217d4e1f7d52d9d61ade848b3
 Section: Tweaks
 Description: Automatically refreshes icon caches via uicache after system language change on iOS 6.
 Author: noname122021
