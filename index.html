@@ -412,6 +412,38 @@
                 </div>
             </div>
 
+            <!-- Exteria Video Fix Tweak Card -->
+            <div class="card" id="exteriavideofix">
+                <div class="card-header" onclick="toggleDetails('exteriavideofix-body', 'exteriavideofix-arrow');">
+                    <div class="card-icon-css">EV</div>
+                    <div class="card-meta">
+                        <div class="card-title">
+                            Exteria Video Fix
+                            <span class="version-tag">v0.1.0</span>
+                        </div>
+                        <div class="card-subtitle">Modern Video Playback Engine for Exteria (Tested on v1.6.0)</div>
+                    </div>
+                    <div class="card-arrow" id="exteriavideofix-arrow">&#9654;</div>
+                </div>
+
+                <div class="card-body" id="exteriavideofix-body">
+                    <div class="card-desc">
+                        Fixes video playback in the Exteria Telegram client on iOS 6. Modern Telegram video streams use fragmented MP4 (fMP4) and High Profile H.264, which crash or freeze on the Apple A5 hardware decoder. This tweak embeds a lightweight hardware-accelerated VLC pipeline with millisecond-accurate scrubbing and clean audio. Tested and verified on <strong>Exteria Application 1.6.0</strong>. Requires <code>me.lululab.libvlc</code> (from <code>http://lululab.net/</code>).
+                    </div>
+
+                    <div class="sub-group-title">Package Details</div>
+                    <div class="list-group">
+                        <div class="list-item">
+                            <div class="left">
+                                <div class="name">Exteria Video Fix</div>
+                                <div class="details">Native fMP4 fallback &amp; CoreAnimation frame presenter (Tested on Exteria 1.6.0)</div>
+                            </div>
+                            <span class="badge">15 KB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- VideoControls+ Tweak Card -->
             <div class="card" id="videocontrolsplus">
                 <div class="card-header" onclick="toggleDetails('videocontrolsplus-body', 'videocontrolsplus-arrow');">

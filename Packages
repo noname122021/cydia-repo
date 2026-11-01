@@ -295,6 +295,22 @@ Author: noname122021
 Name: DictaKey Model: Ukrainian (Small)
 Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
 
+Package: com.noname122021.exteriavideofix
+Version: 0.1.0
+Architecture: iphoneos-arm
+Maintainer: noname122021
+Depends: mobilesubstrate, me.lululab.libvlc (>= 4.0.0)
+Filename: debs/com.noname122021.exteriavideofix_0.1.0_iphoneos-arm.deb
+Size: 15050
+MD5sum: 1b238d1df8ac8dd2a89016d590fa6034
+SHA1: 5961817241bf9d85ebfac80a774e284cac83fe65
+SHA256: 2e34b9fd4c92cd0acb6c9eb3466878c0d740a3e1fad2954102dcf164f00ca4d2
+Section: Tweaks
+Description: Modern H.264 / fMP4 video playback engine for Exteria on iOS 6. Tested on Exteria 1.6.0.
+Author: noname122021
+Name: Exteria Video Fix
+Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+
 Package: com.noname122021.languageiconsfix
 Version: 1.0.1
 Architecture: iphoneos-arm
