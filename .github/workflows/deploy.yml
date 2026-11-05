@@ -39,6 +39,7 @@ jobs:
           PERFHUD_URL="https://github.com/noname122021/perfhud/releases/download/v1.4.0"
           LANGUAGEICONSFIX_URL="https://github.com/noname122021/languageiconsfix/releases/download/v1.0.1"
           EXTERIAVIDEOFIX_URL="https://github.com/noname122021/exteriavideofix/releases/download/v0.1.1"
+          LEGACYGPSFIX_URL="https://github.com/noname122021/legacygpsfix/releases/download/v1.1.0"
 
           grep "^Filename: debs/" Packages | awk '{print $2}' | while read -r deb_path; do
             deb_name=$(basename "$deb_path")
@@ -51,6 +52,8 @@ jobs:
               curl -sSL -f -o "_site/debs/$deb_name" "$EXTERIAVIDEOFIX_URL/$deb_name"
             elif [[ "$deb_name" == *"languageiconsfix"* ]]; then
               curl -sSL -f -o "_site/debs/$deb_name" "$LANGUAGEICONSFIX_URL/$deb_name"
+            elif [[ "$deb_name" == *"legacygpsfix"* ]]; then
+              curl -sSL -f -o "_site/debs/$deb_name" "$LEGACYGPSFIX_URL/$deb_name"
             elif [[ "$deb_name" == *"dictakey_1.0.1"* ]]; then
               curl -sSL -f -o "_site/debs/$deb_name" "$DICTAKEY_V101_URL/$deb_name"
             else

@@ -381,6 +381,55 @@
                 </div>
             </div>
 
+            <!-- LegacyGPSFix Tweak Card -->
+            <div class="card" id="legacygpsfix">
+                <div class="card-header" onclick="toggleDetails('legacygpsfix-body', 'legacygpsfix-arrow');">
+                    <div class="card-icon-css">GPS</div>
+                    <div class="card-meta">
+                        <div class="card-title">
+                            LegacyGPSFix
+                            <span class="version-tag">v1.1.0</span>
+                        </div>
+                        <div class="card-subtitle">GPS Rollover Fix, Autonomous A-GPS &amp; Precision Filters</div>
+                    </div>
+                    <div class="card-arrow" id="legacygpsfix-arrow">&#9654;</div>
+                </div>
+
+                <div class="card-body" id="legacygpsfix-body">
+                    <div class="card-desc">
+                        Restores and enhances GPS/location functionality on legacy iOS devices (iOS 5.0 &ndash; 6.1.6). Fixes the post-2019 GPS Week Number Rollover on Qualcomm/Broadcom basebands, provides autonomous Qualcomm XTRA A-GPS ephemeris injection without TLS certificate issues, incorporates precision navigation filters (static drift elimination &amp; velocity jump gating), position calibration, and built-in fake GPS location overriding.
+                    </div>
+
+                    <div class="sub-group-title">Features</div>
+                    <div class="list-group">
+                        <div class="list-item">
+                            <div class="left">
+                                <div class="name">GPS Week Number Rollover Fix</div>
+                                <div class="details">+1024 weeks date calculation correction for legacy basebands</div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="left">
+                                <div class="name">Autonomous &amp; On-Demand A-GPS</div>
+                                <div class="details">Qualcomm XTRA ephemeris caching with HTTP fallback (no modern TLS needed)</div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="left">
+                                <div class="name">Precision Navigation Filters</div>
+                                <div class="details">Zero-drift stationary filter, kinematic velocity gating &amp; low-lag alpha smoothing</div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="left">
+                                <div class="name">Location Override &amp; Calibration</div>
+                                <div class="details">Built-in fake location spoofer &amp; indoor antenna meter offset calibration</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- LanguageIconsFix Tweak Card -->
             <div class="card" id="languageiconsfix">
                 <div class="card-header" onclick="toggleDetails('languageiconsfix-body', 'languageiconsfix-arrow');">
