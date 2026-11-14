@@ -329,16 +329,16 @@ Name: LanguageIconsFix
 Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
 
 Package: com.noname122021.legacygpsfix
-Version: 1.1.0
+Version: 1.2.0
 Architecture: iphoneos-arm
 Maintainer: noname122021
 Installed-Size: 600
 Depends: mobilesubstrate, preferenceloader
-Filename: debs/com.noname122021.legacygpsfix_1.1.0_iphoneos-arm.deb
-Size: 252968
-MD5sum: 31f9827cbc613033230a699106623f6b
-SHA1: a1c8613d74dff13a1b090036226cda1a3f66ad09
-SHA256: 7719e74aed42c30b23f61506f1fc48977bd21ba1eb2398014c3f69861e91da8e
+Filename: debs/com.noname122021.legacygpsfix_1.2.0_iphoneos-arm.deb
+Size: 253502
+MD5sum: 1b60c4664adcda7e6f343b3f826ca713
+SHA1: 7b9dee5be88157a31640d4b5382cdaeefdcd2158
+SHA256: 4a29d23c283f69d51915ebb7c88f0af54f5ca1bfc15d730c0874cad37eee4bba
 Section: Tweaks
 Description: Restores GPS positioning and ephemeris compatibility on legacy iOS devices
 Author: noname122021
