@@ -335,10 +335,10 @@ Maintainer: noname122021
 Installed-Size: 600
 Depends: mobilesubstrate, preferenceloader
 Filename: debs/com.noname122021.legacygpsfix_1.2.0_iphoneos-arm.deb
-Size: 253502
-MD5sum: 1b60c4664adcda7e6f343b3f826ca713
-SHA1: 7b9dee5be88157a31640d4b5382cdaeefdcd2158
-SHA256: 4a29d23c283f69d51915ebb7c88f0af54f5ca1bfc15d730c0874cad37eee4bba
+Size: 253582
+MD5sum: 785d8757f7e323faf964444ed71956ea
+SHA1: 8066d42bb2ddc5a3c09c712f626278385ba4d821
+SHA256: 6dd4bedf6176bb072986d3a96fa5103bf543ffe32fba3df9780d932a551feac2
 Section: Tweaks
 Description: Restores GPS positioning and ephemeris compatibility on legacy iOS devices
 Author: noname122021
