@@ -340,11 +340,10 @@ MD5sum: 5d00524df247c8101b77ac705451f92c
 SHA1: 7cb7db968ecfb61b7ef7063f9f6f301d44feff3f
 SHA256: c145e44d0946b533cf10450e44976f3672b2a5b5666dc31209f2252dcade24bf
 Section: Tweaks
-Description: Restores GPS rollover & navigation on iOS 6 (supported) and iOS 5 (should work).
+Description: Restores GPS rollover & autonomous A-GPS. iOS 6 (supported), iOS 5 (should work).
 Author: noname122021
 Name: LegacyGPSFix
 Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
-Depiction: https://noname122021.github.io/cydia-repo/depictions/com.noname122021.legacygpsfix/
 
 Package: com.noname122021.perfhud
 Version: 1.4.0
