@@ -344,6 +344,7 @@ Description: Restores GPS rollover & autonomous A-GPS. iOS 6 (supported), iOS 5 
 Author: noname122021
 Name: LegacyGPSFix
 Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+Depiction: https://noname122021.github.io/cydia-repo/depictions/com.noname122021.legacygpsfix/
 
 Package: com.noname122021.perfhud
 Version: 1.4.0

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>LegacyGPSFix</title>
+<style>
+  * { -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #c5ccd4 url('../pinstripe.png');
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    padding: 10px 9px 20px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid #a9afb7;
+    border-radius: 9px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+  .header {
+    display: table;
+    width: 100%;
+    padding: 12px;
+  }
+  .icon-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    width: 54px;
+  }
+  .icon-css {
+    width: 44px;
+    height: 44px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2c3e50), to(#3498db));
+    border-radius: 9px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+  .title-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+  }
+  .title {
+    font-size: 19px;
+    font-weight: bold;
+    color: #111;
+  }
+  .subtitle {
+    font-size: 13px;
+    color: #666;
+    margin-top: 2px;
+  }
+  .section-title {
+    margin: 14px 12px 6px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4c566c;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+  }
+  .content {
+    padding: 10px 12px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    padding: 8px 12px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  li:first-child { border-top: 0; }
+  li strong { color: #111; }
+  .version-badge {
+    display: inline-block;
+    background: #3875d7;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 1px 6px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+  }
+  .meta-row {
+    display: table;
+    width: 100%;
+    padding: 7px 12px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 13px;
+  }
+  .meta-row:first-child { border-top: 0; }
+  .meta-label { display: table-cell; color: #666; width: 40%; }
+  .meta-val { display: table-cell; color: #111; font-weight: bold; text-align: right; }
+  .tag-ok { color: #27ae60; font-weight: bold; }
+  .tag-exp { color: #e67e22; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="header">
+    <div class="icon-wrap">
+      <div class="icon-css">GPS</div>
+    </div>
+    <div class="title-wrap">
+      <div class="title">LegacyGPSFix</div>
+      <div class="subtitle">GPS Rollover Fix, Autonomous A-GPS &amp; Navigation Filters</div>
+    </div>
+  </div>
+</div>
+
+<div class="section-title">Compatibility</div>
+<div class="card">
+  <div class="meta-row">
+    <div class="meta-label">iOS 6.0 &ndash; 6.1.6</div>
+    <div class="meta-val tag-ok">Supported</div>
+  </div>
+  <div class="meta-row">
+    <div class="meta-label">iOS 5.0 &ndash; 5.1.1</div>
+    <div class="meta-val tag-exp">Should work (experimental)</div>
+  </div>
+</div>
+
+<div class="section-title">Features</div>
+<div class="card">
+  <ul>
+    <li><strong>GPS Week Number Rollover Fix:</strong> Corrects GPS timestamp date calculations (+1024 weeks) on legacy Qualcomm and Broadcom basebands.</li>
+    <li><strong>Autonomous &amp; On-Demand A-GPS:</strong> Embedded offline Qualcomm XTRA ephemeris cache with automatic HTTP fallback, bypassing expired TLS certificates.</li>
+    <li><strong>Precision Navigation Filters:</strong> Eliminates stationary drift (SiRF-style), suppresses unrealistic velocity spikes, and smoothes location paths.</li>
+    <li><strong>Fake GPS Location Override:</strong> Built-in coordinate spoofer (defaults to Apple HQ Cupertino), ideal for Wi-Fi-only devices and testing.</li>
+    <li><strong>Antenna Calibration:</strong> Fine-tune local antenna meter offsets directly in Settings &gt; LegacyGPSFix.</li>
+  </ul>
+</div>
+
+<div class="section-title">Changelog</div>
+<div class="card">
+  <ul>
+    <li>
+      <div class="version-badge">v1.2.2</div>
+      <div>Added support for iOS 5.0 &ndash; 5.1.1 (should work): bundled locationd offsets for build 9B206/9B208, extended dynamic Thumb-2 opcode scanner for older LLVM compilers, and added <code>CFURLCreateWithString</code> hooks for legacy A-GPS.</div>
+    </li>
+    <li>
+      <div class="version-badge">v1.2.1</div>
+      <div>System-wide Fake GPS support for Camera.app (spoofs location in photo EXIF metadata via <code>PLLocationController</code>).</div>
+    </li>
+    <li>
+      <div class="version-badge">v1.2.0</div>
+      <div>Settings preference bundle: position calibration, smoothing filters, and fake GPS coordinates.</div>
+    </li>
+    <li>
+      <div class="version-badge">v1.1.0</div>
+      <div>Embedded local A-GPS proxy server with HTTP mirror fallback.</div>
+    </li>
+    <li>
+      <div class="version-badge">v1.0.0</div>
+      <div>Initial release of GPS Week Number Rollover fix for iOS 6.</div>
+    </li>
+  </ul>
+</div>
+
+<div class="section-title">Information</div>
+<div class="card">
+  <div class="meta-row"><div class="meta-label">Author</div><div class="meta-val">noname122021</div></div>
+  <div class="meta-row"><div class="meta-label">Version</div><div class="meta-val">1.2.2</div></div>
+  <div class="meta-row"><div class="meta-label">Architecture</div><div class="meta-val">armv7 (32-bit)</div></div>
+  <div class="meta-row"><div class="meta-label">License</div><div class="meta-val">MIT</div></div>
+</div>
+
+</body>
+</html>
