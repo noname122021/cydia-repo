@@ -365,16 +365,16 @@ Icon: https://noname122021.github.io/cydia-repo/depictions/com.noname122021.perf
 Depiction: https://noname122021.github.io/cydia-repo/depictions/com.noname122021.perfhud/
 
 Package: com.noname122021.videocontrolsplus
-Version: 1.0.3
+Version: 1.0.4
 Architecture: iphoneos-arm
 Maintainer: noname122021
-Installed-Size: 160
-Depends: mobilesubstrate
-Filename: debs/com.noname122021.videocontrolsplus_1.0.3_iphoneos-arm.deb
-Size: 33326
-MD5sum: d2d9136d7347afe6985e3283b2016170
-SHA1: 9380e9391462f5ae6758df7a5b6435b0413d0e1d
-SHA256: 09e20c3f5c9fcb46fd535b817b88da8ce8056c4f2af49a5b27c94a77f9446a82
+Installed-Size: 296
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/com.noname122021.videocontrolsplus_1.0.4_iphoneos-arm.deb
+Size: 37702
+MD5sum: 45d38538fc1c72d7f4d1f18196bb9b0d
+SHA1: 2913699ff61a82eafff7c0eb28c48b92d308efe9
+SHA256: e250dfbf1f52132ff725428b8f6fd9fe891f932fae283b8df89f4fdba7c834f7
 Section: Tweaks
 Description: Modern skip and speed controls for iOS 6 video player.
 Author: noname122021

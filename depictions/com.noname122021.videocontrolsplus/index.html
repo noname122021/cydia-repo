@@ -49,28 +49,28 @@
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
     text-transform: uppercase;
   }
-  .content {
-    padding: 10px 12px;
-    font-size: 14px;
-    line-height: 19px;
-    color: #333;
-  }
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
   li {
-    padding: 7px 12px;
+    padding: 8px 12px;
     border-top: 1px solid #e5e5e5;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 18px;
   }
-  li:first-child {
-    border-top: 0;
-  }
-  li strong {
-    color: #111;
+  li:first-child { border-top: 0; }
+  li strong { color: #111; }
+  .version-badge {
+    display: inline-block;
+    background: #3875d7;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 1px 6px;
+    border-radius: 4px;
+    margin-bottom: 4px;
   }
   .meta-row {
     display: table;
@@ -82,6 +82,7 @@
   .meta-row:first-child { border-top: 0; }
   .meta-label { display: table-cell; color: #666; width: 40%; }
   .meta-val { display: table-cell; color: #111; font-weight: bold; text-align: right; }
+  .tag-ok { color: #27ae60; font-weight: bold; }
 </style>
 </head>
 <body>
@@ -89,29 +90,59 @@
 <div class="card">
   <div class="header">
     <div class="title">VideoControls+</div>
-    <div class="subtitle">Modern skip buttons &amp; speed controls for iOS 6 media player</div>
+    <div class="subtitle">Modern skip &amp; speed controls for iOS 6 media player</div>
   </div>
   <img src="showcase.png" class="screenshot" alt="VideoControls+ Preview">
+</div>
+
+<div class="section-title">Compatibility</div>
+<div class="card">
+  <div class="meta-row">
+    <div class="meta-label">iOS 6.0 &ndash; 6.1.6</div>
+    <div class="meta-val tag-ok">Supported</div>
+  </div>
 </div>
 
 <div class="section-title">Features</div>
 <div class="card">
   <ul>
-    <li><strong>&plusmn;10s Quick Skip:</strong> Replaces rarely used chapter buttons with quick 10-second rewind and forward buttons.</li>
-    <li><strong>Playback Speed Selector:</strong> Instant speed HUD (0.5x, 0.75x, 1x, 1.25x, 1.5x, 2x) on the former chapter menu button.</li>
+    <li><strong>&plusmn;10s Quick Skip:</strong> Replaces rarely used chapter buttons with instant 10-second rewind and forward controls.</li>
+    <li><strong>Playback Speed Selector:</strong> Quick speed HUD (0.5x, 0.75x, 1x, 1.25x, 1.5x, 2x) on the former chapter menu button.</li>
     <li><strong>Rate Persistence:</strong> Preserves chosen speed across pausing, resuming, and scrubbing.</li>
-    <li><strong>Universal Support:</strong> Works across Safari, YouTube, Videos app, and third-party apps using standard MediaPlayer controls.</li>
-    <li><strong>Settings Panel:</strong> Master toggle in Settings &gt; VideoControls+ to enable or disable anytime without respring.</li>
+    <li><strong>Universal Support:</strong> Works across Safari, YouTube, Videos app, iFile, and third-party media players.</li>
+    <li><strong>Native Settings Bundle:</strong> Configure preferences in Settings &gt; VideoControls+ with master toggle and dynamic third-party app options.</li>
+  </ul>
+</div>
+
+<div class="section-title">Changelog</div>
+<div class="card">
+  <ul>
+    <li>
+      <div class="version-badge">v1.0.4</div>
+      <div>Added iFile player compatibility. Introduced dynamic PreferenceBundle with dedicated iFile toggle that manages SUID permissions cleanly via root helper.</div>
+    </li>
+    <li>
+      <div class="version-badge">v1.0.3</div>
+      <div>Added Settings toggle in Settings.app. Fixed speed menu button in WebPort Safari.</div>
+    </li>
+    <li>
+      <div class="version-badge">v1.0.2</div>
+      <div>Added non-Retina @1x asset support (iPad 2, iPad mini 1st gen).</div>
+    </li>
+    <li>
+      <div class="version-badge">v1.0.0</div>
+      <div>Initial release with &plusmn;10s skip controls and playback speed selector HUD.</div>
+    </li>
   </ul>
 </div>
 
 <div class="section-title">Information</div>
 <div class="card">
-  <div class="meta-row"><span class="meta-label">Compatibility</span><span class="meta-val">iOS 6.0 &ndash; 6.1.6</span></div>
-  <div class="meta-row"><span class="meta-label">Architecture</span><span class="meta-val">armv7 (32-bit)</span></div>
-  <div class="meta-row"><span class="meta-label">Developer</span><span class="meta-val">noname122021</span></div>
+  <div class="meta-row"><div class="meta-label">Developer</div><div class="meta-val">noname122021</div></div>
+  <div class="meta-row"><div class="meta-label">Version</div><div class="meta-val">1.0.4</div></div>
+  <div class="meta-row"><div class="meta-label">Architecture</div><div class="meta-val">armv7 (32-bit)</div></div>
+  <div class="meta-row"><div class="meta-label">License</div><div class="meta-val">MIT</div></div>
 </div>
 
 </body>
 </html>
-
