@@ -329,16 +329,16 @@ Name: LanguageIconsFix
 Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
 
 Package: com.noname122021.legacygpsfix
-Version: 1.2.2
+Version: 1.2.3
 Architecture: iphoneos-arm
 Maintainer: noname122021
 Installed-Size: 600
 Depends: mobilesubstrate, preferenceloader
-Filename: debs/com.noname122021.legacygpsfix_1.2.2_iphoneos-arm.deb
-Size: 254038
-MD5sum: 5d00524df247c8101b77ac705451f92c
-SHA1: 7cb7db968ecfb61b7ef7063f9f6f301d44feff3f
-SHA256: c145e44d0946b533cf10450e44976f3672b2a5b5666dc31209f2252dcade24bf
+Filename: debs/com.noname122021.legacygpsfix_1.2.3_iphoneos-arm.deb
+Size: 254678
+MD5sum: 0adcee054385a31aeb61ff2f8052896e
+SHA1: b1c307b126f7190cf2524fd1440ebec04beb35f0
+SHA256: 0d8d5c51dcd03f513deb9dc74b19f702fdd980590c385203754f68d8674547ca
 Section: Tweaks
 Description: Restores GPS rollover & autonomous A-GPS. iOS 6 (supported), iOS 5 (should work).
 Author: noname122021
