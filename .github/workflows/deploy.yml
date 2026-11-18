@@ -46,22 +46,23 @@ jobs:
             deb_name=$(basename "$deb_path")
             echo "Fetching $deb_name..."
             if [[ "$deb_name" == *"videocontrolsplus"* ]]; then
-              curl -sSL -f -o "_site/debs/$deb_name" "$VIDEOCONTROLS_URL/$deb_name"
+              url="$VIDEOCONTROLS_URL/$deb_name"
             elif [[ "$deb_name" == *"navigatoreosm"* ]]; then
-              curl -sSL -f -o "_site/debs/$deb_name" "$NAVIGATOREOSM_URL/$deb_name"
+              url="$NAVIGATOREOSM_URL/$deb_name"
             elif [[ "$deb_name" == *"perfhud"* ]]; then
-              curl -sSL -f -o "_site/debs/$deb_name" "$PERFHUD_URL/$deb_name"
+              url="$PERFHUD_URL/$deb_name"
             elif [[ "$deb_name" == *"exteriavideofix"* ]]; then
-              curl -sSL -f -o "_site/debs/$deb_name" "$EXTERIAVIDEOFIX_URL/$deb_name"
+              url="$EXTERIAVIDEOFIX_URL/$deb_name"
             elif [[ "$deb_name" == *"languageiconsfix"* ]]; then
-              curl -sSL -f -o "_site/debs/$deb_name" "$LANGUAGEICONSFIX_URL/$deb_name"
+              url="$LANGUAGEICONSFIX_URL/$deb_name"
             elif [[ "$deb_name" == *"legacygpsfix"* ]]; then
-              curl -sSL -f -o "_site/debs/$deb_name" "$LEGACYGPSFIX_URL/$deb_name"
+              url="$LEGACYGPSFIX_URL/$deb_name"
             elif [[ "$deb_name" == *"dictakey_1.0.1"* ]]; then
-              curl -sSL -f -o "_site/debs/$deb_name" "$DICTAKEY_V101_URL/$deb_name"
+              url="$DICTAKEY_V101_URL/$deb_name"
             else
-              curl -sSL -f -o "_site/debs/$deb_name" "$DICTAKEY_V100_URL/$deb_name"
+              url="$DICTAKEY_V100_URL/$deb_name"
             fi
+            curl -sSL -f --connect-timeout 15 --retry 3 -o "_site/debs/$deb_name" "$url"
           done
           echo "Downloaded debs:"
           ls -lh _site/debs
