@@ -1,3 +1,20 @@
+Package: com.nicola.navigatoreosm
+Version: 1.3.17.1-ios6
+Architecture: iphoneos-arm
+Maintainer: Nicola & iOS 6 Revival
+Installed-Size: 3468
+Depends: firmware (>= 6.0)
+Filename: debs/com.nicola.navigatoreosm_1.3.17.1-ios6_iphoneos-arm.deb
+Size: 1325830
+MD5sum: 5d9d476bf7b3be89abbe39b78d970f5c
+SHA1: 5fc885c74eab2a7bba108bc8fe7ce2a36bd0ae53
+SHA256: 4caa6cf056a5d10c00e276cafdba795b9c1df23e2f02eefaf17d9c8bbbe4abdb
+Section: Applications
+Description: Navigatore GPS Nativo con OpenStreetMap per iOS 6 (iPad / iPhone)
+Author: Nicola
+Name: NavigatorOSM
+Icon: https://noname122021.github.io/cydia-repo/CydiaIcon.png
+
 Package: com.noname122021.dictakey
 Version: 1.0.1
 Architecture: iphoneos-arm
