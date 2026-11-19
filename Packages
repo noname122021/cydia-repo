@@ -5,10 +5,10 @@ Maintainer: Nicola & iOS 6 Revival
 Installed-Size: 3468
 Depends: firmware (>= 6.0)
 Filename: debs/com.nicola.navigatoreosm_1.3.17.1-ios6_iphoneos-arm.deb
-Size: 1325830
-MD5sum: 5d9d476bf7b3be89abbe39b78d970f5c
-SHA1: 5fc885c74eab2a7bba108bc8fe7ce2a36bd0ae53
-SHA256: 4caa6cf056a5d10c00e276cafdba795b9c1df23e2f02eefaf17d9c8bbbe4abdb
+Size: 1326516
+MD5sum: 23cc6bb155920b3c731a8f57e3db185d
+SHA1: 241903ed0a416d86c3feec2c5e7db1764f327764
+SHA256: ee22eaf77dcf7bc30750af80e898228749fb7bff2dc4fb786fbc572ea5ac1397
 Section: Applications
 Description: Navigatore GPS Nativo con OpenStreetMap per iOS 6 (iPad / iPhone)
 Author: Nicola
